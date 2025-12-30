@@ -1,0 +1,64 @@
+import { Heart, Church } from 'lucide-react';
+
+function About() {
+  return (
+    <section id="about" className="py-24 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-4">
+              Our Story
+            </h2>
+            <div className="w-24 h-1 bg-amber-800 mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-amber-100 p-3 rounded-lg flex-shrink-0">
+                  <Church className="w-6 h-6 text-amber-800" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Founded in Faith</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Established on August 8, 1968, by Apostle N. Lazar, New Jerusalem Church has been a beacon of faith in Bhandup West, Mumbai for over five decades.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-rose-100 p-3 rounded-lg flex-shrink-0">
+                  <Heart className="w-6 h-6 text-rose-700" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Led with Love</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Currently led by Pastor Philip Lazar, we continue the legacy of building a strong, godly community where everyone is welcomed and inspired.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-amber-50 to-rose-50 p-8 rounded-2xl">
+              <h3 className="text-2xl font-serif font-light text-gray-900 mb-4">Our Mission</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                We are an independent evangelical and Pentecostal church focused on discipleship, prayer, worship, and community outreach.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Our mission is to build a strong, godly community where everyone feels welcomed, inspired, and rooted in the Gospel — a place of peace and grace amid the city's hustle.
+              </p>
+              <div className="mt-6 pt-6 border-t border-amber-200">
+                <p className="text-sm text-gray-600 italic">
+                  "I will build my church, and the gates of Hades will not overcome it."
+                  <span className="block mt-1 text-amber-800">— Matthew 16:18</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About;
